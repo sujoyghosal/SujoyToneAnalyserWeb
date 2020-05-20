@@ -1,237 +1,176 @@
-/* CSS declarations go here */
+/* style.css
+ * This file provides css styles.
+ */
 
-body {
-    margin: 0px;
-}
-
-.scontainer {
+body,
+html {
+    background-color: #ffffff;
     width: 100%;
-    height: 90%;
-    position: absolute;
-    background-color: #3b4b54;
-}
-
-.centered {
-    top: 20%;
-    width: 25em;
-    height:100px;
-    margin: 0 auto;
-    position: relative;
-}
-
-.north {
-    top: 10%;
-    width: 25em;
-    height:100px;
-    margin: 0 auto;
-    position: relative;
-}
-
-.underline {
-    border-bottom: 1px solid #CCC;
-    border-top: 0px;
-    border-left: 0px;
-    border-right: 0px;
-    width: 27em;
-    line-height: 1.5em;
-    float: left;
-    margin: 10px;
-    color: beige;
-}
-
-.headerText {
-    border-top: 0px;
-    border-left: 0px;
-    border-right: 0px;
-    width: 27em;
-    line-height: 1.5em;
-    float: left;
-    margin: 10px;
-    color: beige;
-}
-
-html{
-    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
-    background-color:#3b4b54;
-}
-body{
-    margin: 0px;
-}
-.container{
-    border: 1px solid black;
-    width:80%;
-    margin-left:auto;
-    margin-right:auto;
-    margin-top:20px;
-    background-color:#ffffff;
-}
-.headerContainer{
-    padding: 20px;
-    border-bottom: 1px solid lightgrey;
-}
-.headerContainer select{
-    border:none;
-    -webkit-appearance: none;
-    background-color:#ebebeb;
-    border-radius: 0;
-    padding:10px 25px;
-
-
-
-
-    background-image: url("../../imagefiles/downArrow.png");
-    background-repeat: no-repeat;
-    background-position: 100%;
-}
-.bodyContainer {
-    /*content: "";
-    clear: both;*/
-    display: table;
-}
-.block{
-    display: table-cell !important;
-    vertical-align: top;
-    /*display: inline;
-    float: left;*/
-}
-.leftBlock{
-    width: auto;
-    min-height: 500px;
-
-
-    background-color: #eff2f5;
-}
-.rightBlock{
-    
-    padding-left: 40px;
-}
-.titleButton{
-    padding: 20px;
-    border-bottom: 1px solid #dee6ec;
-}
-.titleButtonSelected{
-    background-color: #dee6eb;
-}
-.titleButton img{
-    vertical-align: middle;
-}
-.testCaseRow{
-    width: 700px;
-
-    position: relative;
-
-    padding-top: 20px;
-    padding-bottom: 20px;
-    border-top: 1px solid #ebebeb;
-}
-.testCaseRow .coverageRow{
-    margin: 0px
-}
-.testCaseRow > div{
-    width: 200px;
-    height: 20px;
-    float: right;
-}
-.graphDiv{
-    border: 1px solid black;
-    background-color: #FF6699;
-}
-.graphDiv > div{
     height: 100%;
-    background-color: lightgreen;
-} 
-.stopImg{
-    width: 40px;
-    height: 40px;
-
-    position: absolute;
-    top:50%;
-    margin-top: -21px;
-}
-.testCaseRow span{
-    margin-left: 80px;
+    margin: 0 auto;
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    color: #000000;
 }
 
-.drillDownTable{
-    display: table;
+a {
+    text-decoration: none;
+    color: #00aed1;
 }
 
-.drillDownTable > div{
-    display: table-row;
+a:hover {
+    text-decoration: underline;
 }
 
-.drillDownTable .drillDownContent{
-    display: table-cell;
-    vertical-align: top;
+.newappIcon {
+    padding-top: 10%;
+    display: block;
+    margin: 0 auto;
+    padding-bottom: 2em;
+    max-width: 200px;
 }
 
-.no-border{
-    border: none;
+h1 {
+    font-weight: bold;
+    font-size: 2em;
 }
 
-.flipArrowImg{
-    -webkit-transform: rotate(180deg); 
-    -moz-transform: rotate(180deg);
-    -o-transform: rotate(180deg);
-    -ms-transform: rotate(180deg);
+p {
+    font-weight: bold;
+    font-size: 15px;
+    font-family: calibri;
 }
 
-
-.coverageRow{
-    width: 700px;
-
-    position: relative;
-
-    padding-top: 20px;
-    padding-bottom: 20px;
-    border-top: 1px solid #ebebeb;
+.leftHalf {
+    float: left;
+    background-color: #26343f;
+    width: 25%;
+    height: 100%;
 }
 
-
-
-
-$black: #000;
-$steel_blue: steelblue;
-$white: #fff;
-
-//fonts
-$font_0: sans-serif;
-
-//@extend-elements
-//original selectors
-//.axis path, .axis line
-%extend_1 {
-	fill: none;
-	stroke: $black;
-	shape-rendering: crispEdges;
+.rightHalf {
+    float: right;
+    width: 75%;
+    background-color: #313f4a;
+    height: 100%;
+    overflow: auto;
 }
 
+.blue {
+    color: #00aed1;
+}
 
-.axis {
-	path {
-		@extend %extend_1;
-	}
-	line {
-		@extend %extend_1;
-	}
+table {
+    table-layout: fixed;
+    width: 800px;
+    margin: 0 auto;
+    word-wrap: break-word;
+    padding-top: 15%;
 }
-.bar {
-	fill: $steel_blue;
+
+th {
+    border-bottom: 1px solid #000;
+    text-align: left;
+    padding: 2px 20px;
+    font-size: 20px;
+    color: #5BB200;
 }
-.bartext {
-	font: 12px $font_0;
-	fill: $white;
-	text-align: center;
-}
-.graphtable {
-	font: 14px $font_0;
-	margin-left: 1.6cm;
-	text-align: center;
-	width: 80%;
-}
+
 td {
-	width: 100px;
+    text-align: center;
+    padding: 2px 20px;
+    font-size: 14px;
 }
-.x.axis path {
-	display: none;
+
+.button {
+    background-color: #5BB200;
+    /* Green */
+    border: red;
+    color: white;
+    padding: 7px 19px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+.button1 {
+    font-size: 12px;
+    font-family: verdana;
+}
+
+.button2 {
+    font-size: 14px;
+    font-family: verdana;
+    color: white;
+    background-color: #BA55D3;
+}
+
+.button3 {
+    font-size: 16px;
+    font-family: verdana;
+    float: left;
+}
+
+.button4 {
+    font-size: 20px;
+    font-family: verdana;
+}
+
+.button5 {
+    font-size: 24px;
+    font-family: verdana;
+}
+
+.inner {
+    height: 25px;
+    background-color: #BA55D3;
+}
+
+.outer {
+    border: 1px solid white;
+}
+
+.textarea {
+    height: auto;
+    max-width: 600px;
+    color: #999;
+    font-weight: 400;
+    font-size: 30px;
+    font-family: 'Ubuntu', Helvetica, Arial, sans-serif;
+    width: 100%;
+    background: #fff;
+    border-radius: 3px;
+    line-height: 2em;
+    border: none;
+    box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    -webkit-transition: height 2s ease;
+    -moz-transition: height 2s ease;
+    -ms-transition: height 2s ease;
+    -o-transition: height 2s ease;
+    transition: height 2s ease;
+}
+
+input[type=text] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 30px 0;
+    box-sizing: border-box;
+    border: 2px solid red;
+    border-radius: 4px;
+    background-color: #f1f1f1;
+    font-size: 14px;
+    font-family: verdana;
+}
+
+.env-var {
+    text-align: right;
+    border-right: 1px solid #000;
+    width: 30%;
+}
+
+pre {
+    padding: 0;
+    margin: 0;
 }
